@@ -1,27 +1,11 @@
-import type { View } from 'react-native';
+import RTNBlurUntyped from './components/RTNBlur.harmony';
+import type { View } from 'react-native'
 
-import BlurViewUntyped from './components/BlurView.harmony';
-import VibrancyViewUntyped from './components/VibrancyView.harmony';
+import type { RTNBlurProps as RTNBlurPropsHarmony } from './components/RTNBlur.harmony';
 
-import type { BlurViewProps as BlurViewPropsIOS } from '@react-native-community/blur/src/components/BlurView.ios';
-import type { BlurViewProps as BlurViewPropsAndroid } from '@react-native-community/blur/src/components/BlurView.android';
-import type { BlurViewProps as BlurViewPropsHarmony } from './components/BlurView.harmony';
-import type { VibrancyViewProps as VibrancyViewPropsIOS } from '@react-native-community/blur/src/components/VibrancyView.ios';
+type RTNBlurProps = RTNBlurPropsHarmony;
 
-type BlurViewProps =
-  | BlurViewPropsIOS
-  | BlurViewPropsAndroid
-  | BlurViewPropsHarmony;
+const RTNBlur = RTNBlurUntyped as React.ForwardRefExoticComponent<RTNBlurProps & React.RefAttributes<View>>
 
-type VibrancyViewProps = VibrancyViewPropsIOS;
-
-const BlurView = BlurViewUntyped as React.ForwardRefExoticComponent<
-  BlurViewProps & React.RefAttributes<View>
->;
-
-const VibrancyView = VibrancyViewUntyped as unknown as React.ForwardRefExoticComponent<
-  VibrancyViewProps & React.RefAttributes<View>
->;
-
-export { BlurView, VibrancyView };
-export type { BlurViewProps, VibrancyViewProps };
+export { RTNBlur };
+export type { RTNBlurProps };
