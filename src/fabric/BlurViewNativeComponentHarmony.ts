@@ -7,13 +7,28 @@ import type {
 
 interface NativeProps extends ViewProps {
   blurType?: WithDefault<
-    | 'dark'
-    | 'light'
-    | 'thickMaterialDark'
-    | 'thinMaterialDark'
-    | 'thickMaterialLight'
-    | 'thinMaterialLight',
-    'dark'
+  | 'dark'
+  | 'light'
+  | 'xlight'
+  | 'prominent'
+  | 'regular'
+  | 'extraDark'
+  | 'chromeMaterial'
+  | 'material'
+  | 'thickMaterial'
+  | 'thinMaterial'
+  | 'ultraThinMaterial'
+  | 'chromeMaterialDark'
+  | 'materialDark'
+  | 'thickMaterialDark'
+  | 'thinMaterialDark'
+  | 'ultraThinMaterialDark'
+  | 'chromeMaterialLight'
+  | 'materialLight'
+  | 'thickMaterialLight'
+  | 'thinMaterialLight'
+  | 'ultraThinMaterialLight',
+  'dark'
   >;
   blurAmount?: WithDefault<Int32, 10>;
 }
