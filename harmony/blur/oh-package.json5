@@ -1,11 +1,16 @@
 {
-  "name": "@react-native-oh-tpl/blur",
-  "version": "4.4.0-0.0.6",
-  description: 'react-native-blur for HarmonyOS',
-  main: 'index.ets',
-  author: 'Huawei',
-  license: 'MIT',
-  dependencies: {
-    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
+  "license": "ISC",
+  "types": "",
+  "devDependencies": {
   },
+  "name": "@react-native-oh-tpl/blur",
+  "description": "main cpai architecture",
+  "src": "index.ets",
+  "version": "4.4.0-0.0.6",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony",
+  },
+  "overrides": {
+    "@react-native/codegen": "0.74.0"
+  }
 }
