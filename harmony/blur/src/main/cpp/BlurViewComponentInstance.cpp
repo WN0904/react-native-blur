@@ -1,5 +1,5 @@
 #include "BlurViewComponentInstance.h"
-#include "BlurViewPackage.h"
+#include "BlurPackage.h"
 #include "RNOH/arkui/ImageNode.h"
 
 namespace rnoh {
