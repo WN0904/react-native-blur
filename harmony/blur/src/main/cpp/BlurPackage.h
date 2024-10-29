@@ -17,9 +17,9 @@ public:
     }
 };
 
-class BlurViewPackage : public Package {
+class BlurPackage : public Package {
 public:
-    BlurViewPackage(Package::Context ctx) : Package(ctx) {}
+    BlurPackage(Package::Context ctx) : Package(ctx) {}
 
     ComponentInstanceFactoryDelegate::Shared createComponentInstanceFactoryDelegate() override {
         return std::make_shared<BlurViewComponentInstanceFactoryDelegate>();
