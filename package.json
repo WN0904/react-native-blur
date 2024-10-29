@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/blur",
-  "version": "4.4.0-0.1.0",
+  "version": "4.4.0-0.1.1",
   "description": "React Native Blur component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
